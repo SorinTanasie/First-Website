@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Vectori</title>
+</head>
+<body>
+   <!--Presentation & NAV-->
+    <div id="showcase">
+      <header>
+        <nav class='cf'>
+          <ul class='cf'>
+            <li>
+              <a href="#showcase">Acasa</a>
+            </li>
+            <li>
+              <a href='#text'>Vectori</a>
+            </li>
+            <li>
+              <a href='#video'>Video</a>
+            </li>
+            <li>
+              <a href='#practice'>Excercitii</a>
+            </li>
+          </ul>
+          <a href='#' id='openup'>MENU</a>
+      </header>
+      <div class="section-main container">
+        <h1>Scoala de IT</h1>
+        
+        <h2>Vrei sa inveti cum functioneaza lucrurile din jurul tau?</h2><h2 class="hide-on-small"> Urmareste-ne!</h2> <h2>Te putem ajuta sa privesti lumea in cifre.</h2>
+        
+        <p class="lead hide-on-small">Fii la curent cu toate informatiile apasand pe butonul de mai jos!</p>
+
+        <a href="#" class="btn" onclick="Abonare();">Aboneaza-te</a>
+      </div>
+    </div>
+   <!-- Text -->
+   <section id="text">
+     <div class="container">
+       <div class="box1">
+       <h2>
+          Ce este un tablou unidimensional?
+       </h2>
+       
+
+       <p>
+          Tabloul unidimensional este o structura de date careia i se atribuie un nume. Este format dintr-o colectie de elemente de acelasi tip, asezate continuu in memorie. Elementele pot fi accesate individual prin indici. Toate elementele au un predecesor (cu exceptia primului element) si un succesor (cu exceptia ultimului element)
+       </p>
+       
+      </div>
+
+      <div class="box1">
+        <h2>
+            Tablou unidimensional = vector?
+        </h2>
+
+        <p >
+            O greseala elementara ce o accepta toti profesorii este urmatoarea: permit elevilor sa numeasca aceasta structura de date „vector” – insa acest lucru este total gresit. Aceasta structura de date – tradusa corect in limba romana ar fi „multime”.
+
+            Deoarece o data declarat un tablou unidimensional – nu mai poti modifica numarul total de elemente ce este stocat in acesta. Pe cand intr-un vector, numarul total de elemente variaza pe parcursul rularii programului.
+        </p>
+
+      </div>
+
+      <div class="box1">
+          <h2>Cum declar un tablou unidimensional?</h2>
+          <p>Pentru a declara un tablou unidimensional ai nevoie de 3 proprietati: tipul, numele si dimensiunea acestuia. Cateva exemple:</p>
+          <ul>
+          <li>int V[25]; // un tablou ce retine 25 de numere intregi</li>
+          <li>char s[40]; // un tablou ce retine 40 de caractere</li>
+          <li>float x[30]; // un tablou ce retine 30 de numere reale</li>
+          </ul>
+          <p>Un element al unui tablou poate fi utilizat ca orice alta variabila. Ca sa accesezi un element dintr-un tablou trebuie sa faci referire la indicele acestuia, trecut intre paranteze drepte. Un aspect important este faptul ca 
+            <strong>poti efectua operatii doar asupra unui singur element, nu poti modifica tot tabloul deodata</strong>.
+          </p>
+     </div>
+
+     <div class="box1">
+        <h2>Initializarea tablourilor unidimensionale</h2>
+        <p>Tablourile, la fel ca si variabilele pot fi initializate in trei moduri:</p>
+        <ul>
+        <li>Prin introducerea datelor de la tastatura</li>
+        <li>Prin declararea acestuia global &#8211; toate elementele vor fi zero</li>
+        <li>Imediat dupa declararea acestora</li>
+        </ul>
+        <p>(vezi in<a href="#video" class="move-to" > video</a> cum am intializat pe rand tablourile)</p>
+
+     </div>
+
+     <div>
+        <h2>Accesul elementelor dintr-un tablou unidimensional</h2>
+        <ul>
+        <li>Accesul fiecarui element al tabloului se face prin numele acestuia urmat intre paranteze drepte [ ] de indicele sau (adica pozitia pe care acesta o ocupa in tablou)</li>
+        <li>In limbajul C++ , indicii tablourilor incep numaratoarea de la 0 si se termina la N &#8211; 1 (unde N este numarul total de elemente)</li>
+        </ul>
+        <p><img src="/image/tablouri-unidimensionale.png"></p>
+        <p>Primul element din vector are indicele zero. (Unii profesori invata elevii la clasa ca numaratoarea incepe de la 1 &#8211; <strong>DON&#8217;T DO THAT</strong>).</p>
+     </div>
+    </div>
+   </section>
+
+   <!-- Video -->
+
+   <section id="video">
+
+    <div class="container">
+
+      <div id="video-text">
+        <h1>
+          Material Video
+
+        </h1>
+
+        <h3>
+          Iti este mai usor sa inveti urmarind un clip interactiv?</br>
+          Ti-am pregatit un videoclip ce contine toate informatiile de mai sus si o sa-ti atraga toata atentia!
+        </h3>
+      </div>
+      <div id="video-box">
+          <iframe  src="https://www.youtube.com/embed/6qHtsYGRFIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+   </section>
+
+   <!-- Exercitii -->
+  <section id="practice">
+      <div class="container">
+    <div class="button_cont">
+        <input type="button" id="dsa" value="Suma Vectorilor" onclick="background(value);" class="button_sectiune" >  
+        <input type="button" value="Elementul Maxim" onclick="background(value);" class="button_sectiune" >
+        <input type="button" value="Intersectia a 2 multimi" onclick="background(value);" class="button_sectiune">
+    </div>
+      <section id="practice1">
+          <div class="practice1-text">
+            <h3>
+              Se citește un vector cu n elemente, numere naturale. Să se afișeze suma elementelor din vector.
+            </h3>
+          </div>
+          <div class="container-practice">
+          <div class="code-c">
+            <p>
+                int suma = 0;</br>
+                for(int i = 0; i < n; i++)</br>
+                &nbsp;    suma = suma + V[i];</br>
+                cout << suma;</br>
+            </p>
+          </div>
+          <div class="button_rezolvare"> <button onclick="problemaRezolvata1();">Apasa-l</button></div>
+          <div class="rre"><p id="rezolvare1"></p> </div>
+        </div>
+        </section>
+
+        <section id="practice2">
+            <div class="practice1-text">
+              <h3>
+                  Se citește un vector cu n elemente, numere naturale. Să se afișeze elementul maxim, si de cate ori apare acesta in vector.
+              </h3>
+            </div>
+            <div class="container-practice">
+              <div class="code-c">
+              <p>
+                  int maxim = -9999999;</br>
+                  int aparitii = 0;</br>
+                  for(int i = 0; i < n; i++)</br>
+                  {</br>
+                    &nbsp;    if(V[i] > maxim)</br>
+                    &nbsp;       maxim = V[i];</br>
+                  }</br>
+                  for(int i = 0; i < n; i++)</br>
+                  {</br>
+                    &nbsp;    if(V[i] == maxim)</br>
+                    &nbsp;&nbsp;        aparitii++;</br>
+                  }</br>
+                  cout << "Elementul maxim este " << maxim << " si apare de " << aparitii << " ori.";</br>
+              </p>
+            </div>
+            <div class="button_rezolvare"><button onclick="problemaRezolvata2();">Apasa-l</button></div>
+            <div class="rre" id="rezolvare2"></div>
+          </div>
+          </section>
+        
+        <section id="practice3">
+            <div class="practice1-text">
+              <h3>
+                  Se citesc doi vectori cu n si m elemente. Sa se afiseze intersectia celor doua multimi.
+              </h3>
+            </div>
+            <div class="container-practice">
+              <div class="code-c">
+              <p>
+                  #include   < iostream > </br>
+                      using namespace std;</br>
+                      int main()</br>
+                      {</br>
+                        &nbsp;&nbsp;        int V1[10] = {4, 2, 1, 9, 6, 8};</br>
+                        &nbsp;&nbsp;         int n = 6;</br></br>
+                        &nbsp;&nbsp; ;        int V2[10] = {13, 4, 9, 5, 7};</br>
+                        &nbsp;&nbsp;        int m = 5;</br></br>
+                        &nbsp;&nbsp;         cout << "Intersectia celor doua multimi este: ";</br>
+                        &nbsp;&nbsp;        for(int i = 0; i < n; i++) // Parcurgem fiecare element din vectrul V1</br>
+                        &nbsp;&nbsp;         {</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;       for(int j = 0; j < m; j++) // Pentru fiecare element din vector V1, parcurgem vectorul V2</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;       {</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           if(V1[i] == V2[j])</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               cout << V1[i] << " ";</br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;       }</br>
+                        &nbsp;&nbsp;   }</br>
+                        &nbsp;&nbsp;   return 0;</br>
+                      }</br>
+              </p>
+            </div>
+            <div class="button_rezolvare">
+              <button onclick="problemaRezolvata3();">Apasa-l</button>
+            </div>
+            <div class="rre" id="rezolvare3"> </div>
+          
+          </div>
+          </section>
+        </div>
+        
+        </section>
+    
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+</html>
